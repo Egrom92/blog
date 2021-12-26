@@ -1,0 +1,63 @@
+.MobileMenu {
+  @include anim;
+  position: absolute;
+  top: 84px;
+  height: calc(100vh - 84px);
+  background-color: $white;
+  width: 100%;
+  padding-top: 56px;
+  box-sizing: border-box;
+  overflow: hidden;
+  z-index: 10;
+
+  @include xs-block{
+    top: 14vw;
+    height: calc(100vh - 14vw);
+  };
+
+  > .container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .MobileMenu__wrapper {
+    li {
+      & + li {
+        margin-top: 32px;
+      }
+    }
+  }
+  ul {
+  }
+  li {
+
+  }
+  a {
+    @include anim;
+    &:hover {
+      color: $black;
+    }
+  }
+  .MobileMenu__footer{
+    display: flex;
+    margin: auto 0 130px;
+
+    li {
+      & + li {
+        margin-left: 20px;
+      }
+    }
+  }
+  .MobileMenu_lines {
+    @include anim(.6s);
+    position: absolute;
+    bottom: 50px;
+    max-width: 1440px;
+    left: -60px;
+
+    @include sm-block{
+      left: -190px;
+    };
+  }
+}

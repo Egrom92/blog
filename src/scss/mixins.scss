@@ -1,0 +1,27 @@
+@mixin anim($time: .3s){
+  transition: $time ease-out all;
+}
+
+@mixin center-vert(){
+  top: 50%;
+  transform: translate(0, -50%);
+}
+@mixin center-gor(){
+  left: 50%;
+  transform: translate(-50%);
+}
+@mixin center(){
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin fp($s, $h){
+  font-size: #{$s}px;
+  line-height: #{$h}px;
+}
+@mixin wh($s){
+  width: #{$s}px;
+  height: #{$s}px;
+}
+

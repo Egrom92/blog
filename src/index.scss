@@ -1,0 +1,26 @@
+@import './scss/smart-grid.scss';
+@import './scss/variables.scss';
+
+@import './fonts/main.scss';
+
+@import './scss/mixins.scss';
+@import './scss/base.scss';
+
+// Components
+@import './components/DebugGrid/DebugGrid.scss';
+@import './components/Logo/Logo.scss';
+@import './components/Menu/Menu.scss';
+@import './components/MobileMenu/MobileMenu.scss';
+@import './components/Burger/Burger.scss';
+
+
+
+// Sections
+@import './sections/Header/Header.scss';
+@import './sections/Footer/Footer.scss';
+
+
+// Pages
+@import './pages/Post/Post.scss';
+@import './pages/Posts/Posts.scss';
+

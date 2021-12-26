@@ -1,0 +1,104 @@
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  color: $black;
+
+  .App {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+}
+
+ul, li, p, a, h1, h2, h3, h4, h5, body, address, label {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: block;
+}
+
+input, input:hover, input:focus, input:active, button, button:hover, button:focus, button:active, textarea, textarea:hover, textarea:focus, textarea:active, select, select:hover, select:focus, select:active, option, option:hover, option:focus, option:active, div {
+  outline: none;
+}
+
+a {
+  transition: 0.3s all ease-out;
+  display: inline-block;
+  color: $black;
+}
+
+a, a:hover, a:active, a:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+svg {
+  width: 100%;
+}
+
+input {
+  border-radius: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1 {
+  font-family: $font-manrope-b;
+  @include fp(48, 52);
+}
+
+h2 {
+  font-family: $font-manrope-b;
+  @include fp(32, 40);
+
+  @include xs-block {
+    @include fp(24, 32);
+  }
+;
+}
+
+h3 {
+  font-family: $font-manrope-b;
+  @include fp(24, 32);
+}
+
+.debugGrid {
+  @include debug(rgba(0, 0, 0, 0.4), 1px solid #ff0);
+  z-index: 9999;
+  pointer-events: none;
+}
+
+.container {
+  @include container();
+}
+
+.debugGrid > div, .container {
+  @include lg(max-width, $break_md - $fields_lg * 2);
+  @include md(max-width, $break_sm - $fields_md * 2);
+  @include sm(max-width, $break_xs - $fields_sm * 2);
+  @include xs(max-width, 100%);
+}
+
+.container-fluid {
+  @include container-full();
+}
+
+.less-section {
+  @include from($break_lg) {
+    max-width: 1280px;
+  }
+;
+}
