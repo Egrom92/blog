@@ -1,3 +1,6 @@
+import React from "react";
+import {LogoSmall} from '../../svg'
+
 const Logo = (props) => {
   const {className} = props
 
@@ -5,7 +8,7 @@ const Logo = (props) => {
 
   return (
     <a href='/' className={classes}>
-      Logo
+      <img className='LogoSmall' src={LogoSmall} alt=""/>
     </a>
   );
 };

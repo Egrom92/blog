@@ -1,3 +1,4 @@
+import React from "react";
 import { Footer, Header } from "../sections";
 
 const DefaultLayout = (props) => {

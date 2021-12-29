@@ -10,11 +10,14 @@ html {
 body {
   min-height: 100vh;
   color: $black;
+  font-family: $font-manrope-r;
 
   .App {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background-color: $background;
+
   }
 }
 
@@ -86,6 +89,7 @@ h3 {
 }
 
 .debugGrid > div, .container {
+  @include anim();
   @include lg(max-width, $break_md - $fields_lg * 2);
   @include md(max-width, $break_sm - $fields_md * 2);
   @include sm(max-width, $break_xs - $fields_sm * 2);

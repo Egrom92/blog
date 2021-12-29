@@ -3,12 +3,13 @@
   position: absolute;
   top: 84px;
   height: calc(100vh - 84px);
-  background-color: $white;
+  background-color: transparent;
   width: 100%;
   padding-top: 56px;
   box-sizing: border-box;
   overflow: hidden;
   z-index: 10;
+  display: none;
 
   @include xs-block{
     top: 14vw;

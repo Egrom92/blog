@@ -4,7 +4,7 @@ const smartgrid = require("smart-grid");
 const settings = {
   outputStyle: "scss",
   columns: 12,
-  offset: "13px", //Межколонник
+  offset: "24px", //Межколонник
   container: {
     maxWidth: "1328px",
     fields: "56px", //Отступ по краю контейнера

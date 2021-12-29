@@ -1,9 +1,12 @@
 import React from "react";
+import {DefaultLayout} from "../../layouts";
 
 const Post = (props) => {
 
   return (
-    <h1>One Post</h1>
+    <DefaultLayout>
+      <h1>One Post</h1>
+    </DefaultLayout>
   );
 };
 

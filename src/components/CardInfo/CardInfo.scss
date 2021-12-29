@@ -1,0 +1,39 @@
+.CardInfo {
+  font-size: 12px;
+  display: flex;
+}
+.CardInfo__category {
+  text-transform: uppercase;
+  color: $purple;
+  font-family: $font-manrope-b;
+}
+.CardInfo__createAt {
+  padding-left: 12px;
+  position: relative;
+  color: $label;
+  margin-left: 12px;
+  text-transform: uppercase;
+  font-family: $font-manrope-b;
+
+  &:after {
+    content: '';
+    position: absolute;
+    @include wh(5);
+    border-radius: 100%;
+    background-color: $label;
+    @include center-vert();
+    left: 0;
+  }
+}
+.Card__views {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  opacity: .5;
+}
+.Card__viewsIco {
+  margin-right: 5px;
+}
+.Card__viewsCount {
+  color: $label;
+}

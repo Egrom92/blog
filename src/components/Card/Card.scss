@@ -1,0 +1,52 @@
+.Card {
+  padding: 28px;
+  border-radius: 10px;
+  background-color: $layer;
+  height: 100%;
+  box-sizing: border-box;
+
+  .big & {
+    display: flex;
+  }
+}
+.Card__img {
+  @include anim();
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 10px;
+  height: 218px;
+  width: 100%;
+  object-fit: cover;
+
+  .big & {
+    height: 100%;
+    flex: 1 0 389px;
+  }
+
+  @include lg-block{
+    height: 148px;
+  }
+}
+.Card__content {
+  .big & {
+    margin-left: 28px;
+  }
+}
+.CardInfo {
+  margin-bottom: 33px;
+}
+.Card__title {
+  @include fp(18, 30);
+  color: $white;
+  text-align: left;
+}
+.Card__description {
+  display: none;
+  color: $text;
+  margin-top: 33px;
+  @include fp(15, 28);
+
+  .big & {
+    display: block;
+  }
+}

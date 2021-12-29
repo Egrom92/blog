@@ -1,0 +1,10 @@
+.SearchButton {
+  @include wh(35);
+  cursor: pointer;
+  @include anim();
+
+  &:hover {
+    @include wh(30);
+    transform: rotate(-20deg);
+  }
+}
