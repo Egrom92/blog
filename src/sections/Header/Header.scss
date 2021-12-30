@@ -1,6 +1,8 @@
 .Header-section {
-  padding: 28px 0;
+  padding: 16px 0;
   background-color: $layer;
+  position: relative;
+  z-index: 1;
 }
 .Header {
   display: flex;

@@ -1,15 +1,20 @@
-import React, {useRef} from "react";
 import {Search} from "../../svg";
+import {useDispatch, useSelector} from "react-redux";
+import { searchModalToggle } from '../../store/search';
+
 
 
 const SearchButton = (props) => {
   const {className} = props
-  const inputEl = useRef(null);
+  const dispatch = useDispatch();
+
+
 
 
   const classes = 'SearchButton ' + (className || '');
+
   return (
-    <img className={classes} src={Search} alt=""/>
+    <img onClick={()=>dispatch(searchModalToggle())} className={classes} src={Search} alt=""/>
   );
 };
 

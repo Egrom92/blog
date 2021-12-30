@@ -1,9 +1,8 @@
 import React from "react";
 import CardInfo from "../CardInfo";
 
-console.log(new Date());
 const Card = (props) => {
-  const { img, big = false } = props;
+  const { img} = props;
 
   const {className} = props
   let classes = 'Card ' + (className || '');
@@ -18,10 +17,12 @@ const Card = (props) => {
           <h3 className="Card__title">
             Lorem ipsum – псевдо-латинский текст, который используется для веб дизайна.
           </h3>
-          <p className='Card__description'>
+          <p className='Card__description Card__description_big'>
             Lorem ipsum – псевдо-латинский текст, который используется для веб дизайна.
             Слова и буквы были заменены добавлением или сокращением элементов, поэтому будет совсем неразумно пытаться передать содержание; это не гениально.
-            Слова и буквы были заменены добавлением или сокращением элементов, поэтому будет .
+          </p>
+          <p className='Card__description Card__description_wide'>
+            Lorem ipsum – псевдо-латинский текст, который используется для веб дизайна.
           </p>
         </div>
 

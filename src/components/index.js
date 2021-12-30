@@ -7,6 +7,8 @@ import SearchButton from './SearchButton';
 import Warning from './Warning';
 import Card from './Card';
 import CardInfo from './CardInfo';
+import Search from './Search';
+import Filter from './Filter';
 
 export {
   Logo,
@@ -18,4 +20,6 @@ export {
   Warning,
   Card,
   CardInfo,
+  Search,
+  Filter,
 };

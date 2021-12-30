@@ -25,15 +25,18 @@
     left: 0;
   }
 }
-.Card__views {
+.CardInfo__views {
   margin-left: auto;
   display: flex;
   align-items: center;
-  opacity: .5;
+
+  .wide & {
+    margin-left: 50px;
+  }
 }
-.Card__viewsIco {
+.CardInfo__viewsIco {
   margin-right: 5px;
 }
-.Card__viewsCount {
+.CardInfo__viewsCount {
   color: $label;
 }

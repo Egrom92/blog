@@ -7,7 +7,8 @@ import YouTube from './YouTube.svg';
 import Eye from './Eye.svg';
 import Arrow from './Arrow.svg';
 import LogoSmall from './LogoSmall.svg';
+import Сlose from './Сlose.svg';
 
 export {
-  LogoBig, LogoSmall, Instagram, Search, Telegram, Tiktok, YouTube, Eye, Arrow
+  LogoBig, LogoSmall, Instagram, Search, Telegram, Tiktok, YouTube, Eye, Arrow, Сlose
 };

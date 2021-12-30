@@ -1,8 +1,8 @@
-import {Logo, SearchButton, MobileMenu, Burger, Warning} from '../../components';
+import {Logo, SearchButton, MobileMenu } from '../../components';
 import React from "react";
 
-const Header = () => {
-  console.log(Header.name);
+const Header = (props) => {
+
   return (
     <>
       <header className="Header-section">

@@ -1,6 +1,8 @@
 .Footer-section {
   padding: 40px 0;
   background-color: $layer;
+  position: relative;
+  z-index: 1;
 }
 .Footer {
   display: flex;

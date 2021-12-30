@@ -5,7 +5,7 @@
   height: 100%;
   box-sizing: border-box;
 
-  .big & {
+  .big &, .wide & {
     display: flex;
   }
 }
@@ -23,6 +23,14 @@
     flex: 1 0 389px;
   }
 
+  .wide & {
+    order: 1;
+    margin-bottom: 0;
+    flex: 1 0 190px;
+    height: 159px;
+    margin-left: 30px;
+  }
+
   @include lg-block{
     height: 148px;
   }
@@ -34,6 +42,10 @@
 }
 .CardInfo {
   margin-bottom: 33px;
+
+  .wide & {
+    margin-bottom: 13px;
+  }
 }
 .Card__title {
   @include fp(18, 30);
@@ -43,10 +55,22 @@
 .Card__description {
   display: none;
   color: $text;
-  margin-top: 33px;
   @include fp(15, 28);
 
-  .big & {
-    display: block;
+  &.Card__description_big {
+    margin-top: 33px;
+
+    .big & {
+      display: block;
+    }
   }
+  &.Card__description_wide {
+    margin-top: 10px;
+    font-size: 14px;
+
+    .wide & {
+      display: block;
+    }
+  }
+
 }
