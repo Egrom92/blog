@@ -1,5 +1,5 @@
 .Footer-section {
-  padding: 40px 0;
+  padding: 21px 0;
   background-color: $layer;
   position: relative;
   z-index: 1;
@@ -24,10 +24,8 @@
   }
   a {
 
-
   }
-  img {
+  svg {
     @include wh(30);
-    object-fit: contain;
   }
 }

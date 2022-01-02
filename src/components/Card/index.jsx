@@ -1,5 +1,5 @@
 import React from "react";
-import CardInfo from "../CardInfo";
+import PostInfo from "../PostInfo";
 
 const Card = (props) => {
   const { img} = props;
@@ -12,7 +12,7 @@ const Card = (props) => {
       <div className={classes}>
         <img src={img} className='Card__img' alt=""/>
         <div className="Card__content">
-          <CardInfo/>
+          <PostInfo/>
 
           <h3 className="Card__title">
             Lorem ipsum – псевдо-латинский текст, который используется для веб дизайна.

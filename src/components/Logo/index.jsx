@@ -8,7 +8,7 @@ const Logo = (props) => {
 
   return (
     <a href='/' className={classes}>
-      <img className='LogoSmall' src={LogoSmall} alt=""/>
+      <LogoSmall className='LogoSmall'/>
     </a>
   );
 };

@@ -1,5 +1,6 @@
 @import './scss/smart-grid.scss';
 @import './scss/variables.scss';
+@import './svg/svg';
 
 @import './fonts/main.scss';
 
@@ -10,14 +11,18 @@
 @import './components/DebugGrid/DebugGrid.scss';
 @import './components/Logo/Logo.scss';
 @import './components/Menu/Menu.scss';
-@import './components/MobileMenu/MobileMenu.scss';
-@import './components/Burger/Burger.scss';
 @import './components/SearchButton/SearchButton.scss';
+@import './components/Burger/Burger.scss';
+@import 'components/SearchButton/SearchButton';
 @import './components/Search/Search.scss';
 @import './components/Card/Card.scss';
-@import './components/CardInfo/CardInfo.scss';
+@import './components/PostInfo/PostInfo';
 @import './components/Filter/Filter.scss';
 @import './components/Checkbox/Checkbox.scss';
+@import 'components/Content/Content.scss';
+@import 'sections/SimilarPosts/SimilarPosts.scss';
+@import 'components/PostNavigation/PostNavigation.scss';
+@import 'sections/Pagination/Pagination.scss';
 
 
 

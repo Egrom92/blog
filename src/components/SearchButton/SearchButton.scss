@@ -1,10 +1,16 @@
 .SearchButton {
-  @include wh(35);
   cursor: pointer;
-  @include anim();
+  @include wh(35);
+
+  .SearchButton__Magnifier {
+    @include wh(35);
+    @include anim();
+  }
 
   &:hover {
-    @include wh(30);
-    transform: rotate(-20deg);
+    .SearchButton__Magnifier {
+      @include wh(30);
+      transform: rotate(-20deg);
+    }
   }
 }

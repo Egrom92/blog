@@ -1,14 +1,14 @@
-import LogoBig from './LogoBig.svg';
-import Instagram from './Instagram.svg';
-import Search from './Search.svg';
-import Telegram from './Telegram.svg';
-import Tiktok from './Tiktok.svg';
-import YouTube from './YouTube.svg';
-import Eye from './Eye.svg';
-import Arrow from './Arrow.svg';
-import LogoSmall from './LogoSmall.svg';
-import Сlose from './Сlose.svg';
+import LogoBig from './LogoBig';
+import Instagram from './Instagram';
+import Magnifier from './Magnifier';
+import Telegram from './Telegram';
+import Tiktok from './Tiktok';
+import YouTube from './YouTube';
+import Eye from './Eye';
+import Arrow from './Arrow';
+import LogoSmall from './LogoSmall';
+import Сlose from './Сlose';
 
 export {
-  LogoBig, LogoSmall, Instagram, Search, Telegram, Tiktok, YouTube, Eye, Arrow, Сlose
+  LogoBig, LogoSmall, Instagram, Magnifier, Telegram, Tiktok, YouTube, Eye, Arrow, Сlose
 };

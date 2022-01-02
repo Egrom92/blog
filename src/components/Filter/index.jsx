@@ -9,14 +9,7 @@ const Filter = (props) => {
   return (
     <>
       <div className={classes}>
-        <h3 className="Filter__title">
-          Фильтр
-        </h3>
-
         <div className="Filter__category">
-          <h4 className="Filter__paramsTitle">
-            Категория
-          </h4>
           <ul className="Filter__params">
             <li className="Filter__param">
               <Checkbox className='Filter__Checkbox' name='JavaScript'/>

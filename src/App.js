@@ -15,7 +15,7 @@ function App() {
         <Routes>
           <Route path="/" exact="true" element={<Posts />} />
           <Route
-            path="/posts/:slug"
+            path="/post/:slug"
             exact="true"
             element={<Post />}
           />

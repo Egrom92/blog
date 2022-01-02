@@ -11,10 +11,10 @@ const Footer = (props) => {
         <div className="container">
           <div className="Footer">
             <ul>
-              {socials.map((ico, i) => (
+              {socials.map((Ico, i) => (
                 <li key={i}>
                   <a href="#">
-                    <img src={ico}/>
+                    <Ico/>
                   </a>
                 </li>
               ))}

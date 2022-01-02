@@ -1,0 +1,43 @@
+.PostInfo {
+  font-size: 12px;
+  display: flex;
+
+  > *:not(:first-child) {
+    position: relative;
+
+    &:after {
+      content: '';
+      position: absolute;
+      @include wh(3);
+      border-radius: 100%;
+      background-color: rgba($label, .5);
+      @include center-vert();
+      left: 0;
+    }
+  }
+}
+.PostInfo__category {
+  text-transform: uppercase;
+  color: $purple;
+  font-family: $font-manrope-b;
+}
+.PostInfo__createAt {
+  padding-left: 12px;
+  margin-left: 12px;
+  color: $label;
+  text-transform: uppercase;
+  font-family: $font-manrope-b;
+}
+.PostInfo__views {
+  padding-left: 12px;
+  margin-left: 12px;
+  display: flex;
+  align-items: center;
+}
+.PostInfo__Eye {
+  margin-right: 5px;
+  stroke: $label;
+}
+.PostInfo__EyeCount {
+  color: $label;
+}

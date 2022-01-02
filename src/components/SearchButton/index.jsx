@@ -1,8 +1,7 @@
-import {Search} from "../../svg";
+import { Magnifier } from "../../svg";
 import {useDispatch, useSelector} from "react-redux";
 import { searchModalToggle } from '../../store/search';
-
-
+import React from "react";
 
 const SearchButton = (props) => {
   const {className} = props
@@ -14,7 +13,11 @@ const SearchButton = (props) => {
   const classes = 'SearchButton ' + (className || '');
 
   return (
-    <img onClick={()=>dispatch(searchModalToggle())} className={classes} src={Search} alt=""/>
+    <>
+    <div className={classes} onClick={()=>dispatch(searchModalToggle())}>
+      <Magnifier className='SearchButton__Magnifier' />
+    </div>
+    </>
   );
 };
 

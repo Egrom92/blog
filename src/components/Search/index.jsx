@@ -2,14 +2,17 @@ import React, {useState} from "react";
 import Card from "../Card";
 import Filter from "../Filter";
 import {Сlose} from '../../svg'
+import {useDispatch} from "react-redux";
 
 import card_1 from '../../img/cards/card_1.jpg'
 import card_2 from '../../img/cards/card_2.jpg'
 import card_3 from '../../img/cards/card_3.jpg'
+import {searchModalToggle} from "../../store/search";
 
 
 const Search = (props) => {
   const {className} = props
+  const dispatch = useDispatch();
 
   const [searchInputValue, setSearchInputValue] = useState('')
 
@@ -17,7 +20,7 @@ const Search = (props) => {
   return (
     <>
       <div className={classes}>
-        <div className="Search__overflow"></div>
+        <div onClick={()=>dispatch(searchModalToggle())} className="Search__overflow"></div>
         <div className="Search__modal">
           <div className="Search__inputWrapper">
             <input onChange={e => setSearchInputValue(e.target.value)} value={searchInputValue} className='Search__input' placeholder='Поиск...' type="text" name="" id=""/>

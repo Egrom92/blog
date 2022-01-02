@@ -4,11 +4,13 @@ import DebugGrid from './DebugGrid';
 import Burger from './Burger';
 import MobileMenu from './MobileMenu';
 import SearchButton from './SearchButton';
-import Warning from './Warning';
 import Card from './Card';
-import CardInfo from './CardInfo';
+import PostInfo from './PostInfo';
 import Search from './Search';
 import Filter from './Filter';
+import Content from './Content';
+import PostNavigation from './PostNavigation';
+
 
 export {
   Logo,
@@ -17,9 +19,10 @@ export {
   Burger,
   MobileMenu,
   SearchButton,
-  Warning,
   Card,
-  CardInfo,
+  PostInfo,
   Search,
   Filter,
+  Content,
+  PostNavigation,
 };

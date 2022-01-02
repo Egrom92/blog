@@ -1,4 +1,15 @@
 import Header from './Header';
 import Footer from './Footer';
 
-export { Header, Footer };
+import SimilarPosts from './SimilarPosts';
+
+import Pagination from './Pagination';
+
+export {
+  Header,
+  Footer,
+
+  SimilarPosts,
+
+  Pagination,
+};

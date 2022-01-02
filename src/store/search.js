@@ -4,7 +4,7 @@ export const searchSlice = createSlice({
   name: 'search',
 
   initialState: {
-    toggleSearchModal: true,
+    toggleSearchModal: false,
   },
 
   reducers: {
