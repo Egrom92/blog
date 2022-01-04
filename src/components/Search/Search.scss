@@ -7,6 +7,11 @@
   padding: 0 20px 50px;
   box-sizing: border-box;
   overflow: scroll;
+  z-index: 10;
+
+  @include xs-block{
+    padding: 0 0 50px;
+  }
 }
 .Search__overflow {
   position: fixed;
@@ -27,6 +32,10 @@
   box-sizing: border-box;
   box-shadow: 0 0 20px 3px rgba($action, .1);
   border-radius: 10px;
+
+  @include xs-block{
+    padding: 10px;
+  }
 }
 .Search__inputWrapper {
   height: 48px;
@@ -56,31 +65,83 @@
       transform: rotate(-15deg);
   }
 }
+.Search__header {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+}
 .Search__title {
   font-size: 30px;
   color: $text;
-  margin-bottom: 30px;
+
+  @include xs-block{
+    font-size: 20px;
+  }
+}
+.Search__FilterIco {
+  @include anim();
+  display: none;
+  margin-left: auto;
+  cursor: pointer;
+  width: auto;
+  height: 32px;
+  margin-right: 20px;
+  opacity: 0.6;
+  
+  &:hover {
+    opacity: 1;
+  }
+
+  @include md-block{
+    display: block;
+  }
 }
 .Search__result {
   display: flex;
   align-items: flex-start;
+  border-radius: 10px;
+
+  @include md-block{
+    position: relative;
+    overflow: hidden;
+  }
+  @include xs-block{
+
+  }
 }
 .Search__list {
   width: 100%;
   margin-right: 30px;
-}
-.Search__item {
-  +.Search__item {
-    margin-top: 28px;
+
+  @include md-block{
+    margin-right: 0;
   }
+
 }
 .Search__Card {
-  
+  +.Search__Card {
+    margin-top: 28px;
+  }
 }
 .Search__Filter {
   background-color: $layer;
   border-radius: 10px;
   margin-left: auto;
+
+  @include md-block{
+    display: none;
+    top: 50px;
+    position: absolute;
+    width: calc(100% - 100px);
+    @include center-gor();
+    max-width: none;
+    box-shadow: 0 20px 200px 60px rgb(0 0 0);
+
+    &.Search__Filter_open {
+      display: block;
+    }
+  }
+
 }
 .Search__more {
   @include anim();
@@ -89,7 +150,7 @@
   font-size: 17px;
   color: $white;
   cursor: pointer;
-  background-color: rgba($action, .3);
+  background-color: transparent;
   height: 40px;
   min-width: 150px;
   padding: 0 40px;

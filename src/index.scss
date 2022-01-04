@@ -13,22 +13,24 @@
 @import './components/Menu/Menu.scss';
 @import './components/SearchButton/SearchButton.scss';
 @import './components/Burger/Burger.scss';
-@import 'components/SearchButton/SearchButton';
-@import './components/Search/Search.scss';
+@import './components/SearchButton/SearchButton';
 @import './components/Card/Card.scss';
 @import './components/PostInfo/PostInfo';
 @import './components/Filter/Filter.scss';
 @import './components/Checkbox/Checkbox.scss';
-@import 'components/Content/Content.scss';
-@import 'sections/SimilarPosts/SimilarPosts.scss';
-@import 'components/PostNavigation/PostNavigation.scss';
-@import 'sections/Pagination/Pagination.scss';
+@import './components/Content/Content.scss';
+@import './components/PostNavigation/PostNavigation.scss';
+@import './components/Search/Search.scss';
+@import './components/Cards/Cards.scss';
+
 
 
 
 // Sections
 @import './sections/Header/Header.scss';
 @import './sections/Footer/Footer.scss';
+@import './sections/Pagination/Pagination.scss';
+@import './sections/SimilarPosts/SimilarPosts.scss';
 
 
 // Pages

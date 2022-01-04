@@ -7,12 +7,21 @@
   display: flex;
   align-items: center;
 
+  @include md-block{
+    height: 57px;
+  }
+
 
   .PostNavigation__imgWrapper {
     position: relative;
     height: 100%;
     width: 126px;
     overflow: hidden;
+    border-radius: 5px;
+
+    @include md-block{
+      width: 96px;
+    }
 
 
     &:after {
@@ -25,6 +34,7 @@
       background-color: rgba($background, .5);
       content: '';
       box-shadow: inset 0 0 24px 10px rgba($background, 0.7);
+
     }
   }
 
@@ -37,7 +47,9 @@
     height: 30px;
     opacity: 0.5;
 
-
+    @include md-block{
+      height: 20px;
+    }
   }
 
   img {
@@ -46,7 +58,6 @@
     width: 100%;
     object-fit: cover;
     overflow: hidden;
-    border-radius: 5px;
   }
 
   p {
@@ -54,10 +65,17 @@
     font-size: 15px;
     margin-left: 10px;
     color: $text;
+
+    @include md-block{
+        display: none;
+    }
   }
 
   &:hover {
     .PostNavigation__imgWrapper {
+      border-radius: 5px;
+      overflow: hidden;
+
       &:after {
         box-shadow: inset 0 0 24px 10px transparent;
       }

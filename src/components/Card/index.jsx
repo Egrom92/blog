@@ -1,34 +1,36 @@
 import React from "react";
 import PostInfo from "../PostInfo";
+import {NavLink} from "react-router-dom";
 
 const Card = (props) => {
-  const { img} = props;
+  const {img} = props;
 
   const {className} = props
   let classes = 'Card ' + (className || '');
 
 
-    return (
-      <div className={classes}>
-        <img src={img} className='Card__img' alt=""/>
-        <div className="Card__content">
-          <PostInfo/>
+  return (
+    <NavLink
+      to={'/post/post-1'}
+      exact="true"
+      className={classes}
+    >
 
-          <h3 className="Card__title">
-            Lorem ipsum – псевдо-латинский текст, который используется для веб дизайна.
-          </h3>
-          <p className='Card__description Card__description_big'>
-            Lorem ipsum – псевдо-латинский текст, который используется для веб дизайна.
-            Слова и буквы были заменены добавлением или сокращением элементов, поэтому будет совсем неразумно пытаться передать содержание; это не гениально.
-          </p>
-          <p className='Card__description Card__description_wide'>
-            Lorem ipsum – псевдо-латинский текст, который используется для веб дизайна.
-          </p>
-        </div>
+      <img src={img} className='Card__img' alt=""/>
+      <div className="Card__content">
+        <PostInfo className='Card__PostInfo'/>
 
-
+        <h3 className="Card__title">
+          Lorem ipsum – псевдо-латинский текст, который используется для веб дизайна.
+        </h3>
+        <p className='Card__description'>
+          Lorem ipsum – псевдо-латинский текст, который используется для веб дизайна.
+        </p>
       </div>
-    );
+
+
+    </NavLink>
+  );
 
 };
 

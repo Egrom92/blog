@@ -1,16 +1,55 @@
 .SimilarPosts__section {
   padding-bottom: 100px;
 }
-.SimilarPosts {
+
+.SimilarPosts__Cards {
   @include row-flex();
 
-  li {
+  @include md-block {
+    flex-direction: column;
+  }
+
+  .Card {
     @include col();
     @include size(4);
+    @include size-lg(6);
+    @include size-md(12);
+    @include size-xs(12);
 
+
+  @include lg-block{
+    &:nth-child(3) {
+      display: none;
+    }
   }
-}
 
-.SimilarPosts__Card {
+    @include md-block {
+      display: flex;
+      flex-direction: row-reverse;
 
+      &:nth-child(3) {
+        display: flex;
+      }
+
+      &+.Card {
+        margin-top: 25px;
+      }
+    }
+    @include sm-block{
+      flex-direction: column;
+    }
+  }
+
+  .Card__img {
+    @include md-block{
+      margin-bottom: 0;
+      flex: 1 0 150px;
+      height: auto;
+      margin-left: 30px;
+    }
+    @include sm-block{
+      margin-left: 0;
+      margin-bottom: 15px;
+    }
+  }
 }

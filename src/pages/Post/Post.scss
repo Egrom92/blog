@@ -1,5 +1,13 @@
 .Post__section {
   padding: 60px 0 120px;
+
+  @include sm-block{
+    padding: 60px 0;
+  }
+
+  @include xs-block{
+    padding: 50px 0;
+  }
 }
 .Post {
 

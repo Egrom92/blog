@@ -10,6 +10,7 @@ import Search from './Search';
 import Filter from './Filter';
 import Content from './Content';
 import PostNavigation from './PostNavigation';
+import Cards from './Cards';
 
 
 export {
@@ -25,4 +26,5 @@ export {
   Filter,
   Content,
   PostNavigation,
+  Cards,
 };

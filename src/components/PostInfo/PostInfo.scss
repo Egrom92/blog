@@ -2,6 +2,10 @@
   font-size: 12px;
   display: flex;
 
+  @include xs-block{
+    font-size: 10px;
+  }
+
   > *:not(:first-child) {
     position: relative;
 

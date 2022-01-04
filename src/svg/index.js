@@ -8,7 +8,8 @@ import Eye from './Eye';
 import Arrow from './Arrow';
 import LogoSmall from './LogoSmall';
 import Сlose from './Сlose';
+import FilterIco from './FilterIco';
 
 export {
-  LogoBig, LogoSmall, Instagram, Magnifier, Telegram, Tiktok, YouTube, Eye, Arrow, Сlose
+  LogoBig, LogoSmall, Instagram, Magnifier, Telegram, Tiktok, YouTube, Eye, FilterIco, Arrow, Сlose
 };

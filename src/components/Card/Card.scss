@@ -2,11 +2,13 @@
   padding: 28px;
   border-radius: 10px;
   background-color: $layer;
-  height: 100%;
   box-sizing: border-box;
 
-  .big &, .wide & {
-    display: flex;
+  @include md-block{
+    flex-direction: column;
+  }
+  @include xs-block{
+    padding: 10px;
   }
 }
 .Card__img {
@@ -18,30 +20,21 @@
   width: 100%;
   object-fit: cover;
 
-  .big & {
-    height: 100%;
-    flex: 1 0 389px;
-  }
-
-  .wide & {
-    order: 1;
-    margin-bottom: 0;
-    flex: 1 0 190px;
-    height: 159px;
-    margin-left: 30px;
-  }
-
   @include lg-block{
-    height: 148px;
+    height: 248px;
+  }
+  @include md-block{
   }
 }
 .Card__content {
-  .big & {
-    margin-left: 28px;
-  }
+
 }
-.PostInfo {
+.Card__PostInfo {
   margin-bottom: 33px;
+
+  @include xs-block{
+    margin-bottom: 20px;
+  }
 
   .wide & {
     margin-bottom: 13px;
@@ -51,26 +44,14 @@
   @include fp(18, 30);
   color: $white;
   text-align: left;
+
+  @include xs-block{
+    font-size: 15px;
+    line-height: 23px;
+  }
 }
 .Card__description {
   display: none;
   color: $text;
   @include fp(15, 28);
-
-  &.Card__description_big {
-    margin-top: 33px;
-
-    .big & {
-      display: block;
-    }
-  }
-  &.Card__description_wide {
-    margin-top: 10px;
-    font-size: 14px;
-
-    .wide & {
-      display: block;
-    }
-  }
-
 }

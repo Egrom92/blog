@@ -1,23 +1,10 @@
 .Posts-section {
   padding: 120px 0;
-}
-.Posts {
-  @include row-flex();
 
-  li {
-    @include col();
-    @include size(4);
-
-    &:not(:nth-child(-n+3)) {
-      margin-top: 24px;
-    }
-
-
-    &.big {
-      @include size(8);
-    }
+  @include sm-block{
+    padding: 90px 0;
   }
-}
-.Posts__Card {
-  
+  @include xs-block{
+    padding: 50px 0;
+  }
 }

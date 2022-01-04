@@ -4,11 +4,17 @@ import { searchModalToggle } from '../../store/search';
 import React from "react";
 
 const SearchButton = (props) => {
+
+
+  // const getName = (name) => {
+  //   return name.name;
+  // }
+  // console.log(getName(SearchButton));
+
+
+
   const {className} = props
   const dispatch = useDispatch();
-
-
-
 
   const classes = 'SearchButton ' + (className || '');
 
